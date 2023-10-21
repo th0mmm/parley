@@ -43,7 +43,7 @@ class executeTask:
         except:
             print("Subdomain enumeration is running.")
             try:
-                sp.run(["gobuster", "vhost", "-u", f"{self.ip}", "-w", "/usr/share/wordlists/amass/subdomains-top1mil-110000.txt", "-q", "-k", "-t", "70", "-o", f"parley_result/{self.ip}/subdomain_enum/result_subdomain_enum.txt"], capture_output=False, stdout=sp.DEVNULL, stderr=sp.DEVNULL)
+                sp.run(["gobuster", "vhost", "-u", f"{self.ip}", "-w", "/usr/share/wordlists/amass/subdomains-top1mil-110000.txt", "-q", "--append-domain", "-k", "-t", "70", "-o", f"parley_result/{self.ip}/subdomain_enum/result_subdomain_enum.txt"], capture_output=False, stdout=sp.DEVNULL, stderr=sp.DEVNULL)
             except:
                 print("Error has occurred during subdomain enumeration. Please re-run the script.")
         else:  
