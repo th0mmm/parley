@@ -12,6 +12,6 @@ Please do manually install the following tools or dependencies:
 Change your directory to your target's documentation folder.
 
 Move it to your /usr/local folder for ease of execution:
-chmod +x parley.py; sudo cp parley.py /usr/local/bin/
+chmod +x parley.py; sudo cp parley.py /usr/local/bin/parley
 
-Example: parley.py -t example.com
+Example: sudo parley -t example.com
