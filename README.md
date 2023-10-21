@@ -15,3 +15,6 @@ Move it to your /usr/local folder for ease of execution:
 chmod +x parley.py; sudo cp parley.py /usr/local/bin/parley
 
 Example: sudo parley -t example.com
+
+## Disclaimer
+Pip installation requires sudo e.g sudo pip install -r requirements.txt. This might be insecure. If there are other more secure methods, please do give feedback.
